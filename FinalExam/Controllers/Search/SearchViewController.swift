@@ -23,9 +23,9 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         searchController.searchBar.delegate = self
-            searchController.searchBar.placeholder = "Search movie"
-            navigationItem.searchController = searchController
-            searchMovie(title: "Spiderman")
+        searchController.searchBar.placeholder = "Search movie"
+        navigationItem.searchController = searchController
+        searchMovie(title: "Spiderman")
 
     }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

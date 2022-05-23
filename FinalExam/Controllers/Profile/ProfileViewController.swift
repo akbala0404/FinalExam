@@ -19,14 +19,14 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          loadUserData()
-
         // Do any additional setup after loading the view.
     }
     
     @IBAction func logout(_ sender: Any) {
         do {
                    try Auth.auth().signOut()
-                    let viewcontroller = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
+                   UserDefaults.standard.set(false, forKey: "ISUSERLOGGED")
+                    let viewcontroller = self.storyboard?.instantiateViewController(withIdentifier: "LoginRegisterViewController")
                              viewcontroller?.modalPresentationStyle = .fullScreen
                              self.present(viewcontroller!, animated: true, completion: nil)
                }catch let error {

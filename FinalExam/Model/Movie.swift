@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class Movie: Decodable, Encodable {
+class Movie {
   var id = 0
   var title = ""
   var release_date = ""

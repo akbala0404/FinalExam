@@ -73,13 +73,19 @@ class RegisterViewController: UIViewController {
                        print("Failed to update database", error.localizedDescription)
                        return
                    }
-                   self.startApp()
+                UserDefaults.standard.set(true, forKey: "ISUSERLOGGED")
+                self.startApp()
                })
                
                
            }
            
        }
+    @IBAction func showPassword(_ sender: Any) {
+         passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
+         confirmPasswordTextField.isSecureTextEntry = !confirmPasswordTextField.isSecureTextEntry
+    }
+    
     func startApp() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                           let vc = storyboard.instantiateViewController(identifier: "TabBarViewController")

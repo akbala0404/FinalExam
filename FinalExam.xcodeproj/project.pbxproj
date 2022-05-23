@@ -25,13 +25,15 @@
 		FE5BC2DA283A95D800FD2816 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE5BC2D9283A95D800FD2816 /* View.xib */; };
 		FE5BC2DC283A983400FD2816 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5BC2DB283A983400FD2816 /* DetailTableViewCell.swift */; };
 		FE5BC2DE283ACEB200FD2816 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5BC2DD283ACEB200FD2816 /* ProfileViewController.swift */; };
-		FE5BC2E0283AD63900FD2816 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5BC2DF283AD63900FD2816 /* Favorite.swift */; };
 		FE60529B2834032700133207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE60529A2834032700133207 /* AppDelegate.swift */; };
 		FE60529D2834032700133207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE60529C2834032700133207 /* SceneDelegate.swift */; };
 		FE60529F2834032700133207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE60529E2834032700133207 /* ViewController.swift */; };
 		FE6052A22834032700133207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6052A02834032700133207 /* Main.storyboard */; };
 		FE6052A42834032C00133207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6052A32834032C00133207 /* Assets.xcassets */; };
 		FE6052A72834032C00133207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6052A52834032C00133207 /* LaunchScreen.storyboard */; };
+		FE635EFB283B4BDD00CD9749 /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE635EFA283B4BDD00CD9749 /* TextFieldWithPadding.swift */; };
+		FE635EFD283B5CAA00CD9749 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE635EFC283B5CAA00CD9749 /* PlayerViewController.swift */; };
+		FE635EFF283B5CE100CD9749 /* MovieVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE635EFE283B5CE100CD9749 /* MovieVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +57,6 @@
 		FE5BC2D9283A95D800FD2816 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		FE5BC2DB283A983400FD2816 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		FE5BC2DD283ACEB200FD2816 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		FE5BC2DF283AD63900FD2816 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		FE6052972834032700133207 /* FinalExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE60529A2834032700133207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE60529C2834032700133207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +65,9 @@
 		FE6052A32834032C00133207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE6052A62834032C00133207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE6052A82834032C00133207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE635EFA283B4BDD00CD9749 /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
+		FE635EFC283B5CAA00CD9749 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		FE635EFE283B5CE100CD9749 /* MovieVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				FE5350C6283574ED00C0D509 /* TabBarViewController.swift */,
 				FE5BC2D9283A95D800FD2816 /* View.xib */,
 				FE5BC2DB283A983400FD2816 /* DetailTableViewCell.swift */,
+				FE635EFC283B5CAA00CD9749 /* PlayerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,9 +119,9 @@
 		FE5AEB0928395F00004585BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FE5BC2DF283AD63900FD2816 /* Favorite.swift */,
 				FE5AEB1128396407004585BB /* MainMovies.swift */,
 				FE5AEB1328396417004585BB /* Movie.swift */,
+				FE635EFE283B5CE100CD9749 /* MovieVideo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				FE6052A52834032C00133207 /* LaunchScreen.storyboard */,
 				FE6052A82834032C00133207 /* Info.plist */,
 				FE5350C828357CD500C0D509 /* GoogleService-Info.plist */,
+				FE635EFA283B4BDD00CD9749 /* TextFieldWithPadding.swift */,
 			);
 			path = FinalExam;
 			sourceTree = "<group>";
@@ -318,18 +324,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE635EFB283B4BDD00CD9749 /* TextFieldWithPadding.swift in Sources */,
 				FE5BC2DC283A983400FD2816 /* DetailTableViewCell.swift in Sources */,
 				FE5AEB1D28396F42004585BB /* SearchViewController.swift in Sources */,
 				FE5AEB1928396680004585BB /* UpcomingTableViewCell.swift in Sources */,
 				FE5AEB1228396407004585BB /* MainMovies.swift in Sources */,
 				FE60529F2834032700133207 /* ViewController.swift in Sources */,
 				FE5AEB102839638C004585BB /* TopRatedTableViewCell.swift in Sources */,
+				FE635EFF283B5CE100CD9749 /* MovieVideo.swift in Sources */,
 				FE5AEB172839649D004585BB /* Urls.swift in Sources */,
 				FE60529B2834032700133207 /* AppDelegate.swift in Sources */,
+				FE635EFD283B5CAA00CD9749 /* PlayerViewController.swift in Sources */,
 				FE5BC2D6283A450A00FD2816 /* DetailViewController.swift in Sources */,
 				FE5BC2DE283ACEB200FD2816 /* ProfileViewController.swift in Sources */,
 				FE60529D2834032700133207 /* SceneDelegate.swift in Sources */,
-				FE5BC2E0283AD63900FD2816 /* Favorite.swift in Sources */,
 				FE463AC22835656400AAE23C /* RegisterViewController.swift in Sources */,
 				FE5350C7283574ED00C0D509 /* TabBarViewController.swift in Sources */,
 				FE463AC02835655900AAE23C /* LoginViewController.swift in Sources */,
